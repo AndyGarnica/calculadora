@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf8">
+    <title>Calculadora</title>
+    <script src="calculadora.js"></script>
+  </head>
+
+  <body>
+
+    <form name="formulario">
+      <h1>Calculadora</h1>
+
+      <table>
+        <tr>
+          <td colspan="5"><input type="text" name="valores" id="valores" onkeypress="return numeros(event)"></td>
+        </tr>
+
+        <tr>
+          <td><input type="button" value="1" onClick="asignarValores(value)"></td>
+          <td><input type="button" value="2" onClick="asignarValores(value)"></td>
+          <td><input type="button" value="3" onClick="asignarValores(value)"></td>
+          <td><input type="button" value="AC" onclick="eliminar()"></td>
+          <td><input type="button" value="C" onclick="reiniciar()"></td>
+        </tr>
+
+        <tr>
+          <td><input type="button" value="4" onClick="asignarValores(value)"></td>
+          <td><input type="button" value="5" onClick="asignarValores(value)"></td>
+          <td><input type="button" value="6" onClick="asignarValores(value)"></td>
+          <td><input type="button" value="+" onclick="comprobar(value)"></td>
+          <td><input type="button" value="-" onclick="comprobar(value)"></td>
+        </tr>
+
+        <tr>
+          <td><input type="button" value="7" onClick="asignarValores(value)"></td>
+          <td><input type="button" value="8" onClick="asignarValores(value)"></td>
+          <td><input type="button" value="9" onClick="asignarValores(value)"></td>
+          <td><input type="button" value="*" onclick="comprobar(value)"></td>
+          <td><input type="button" value="/" onclick="comprobar(value)"></td>
+        </tr>
+
+        <tr>
+          <td colspan="2"><input type="button" value="0" onClick="asignarValores(value)"></td>
+          <td><input type="button" value="." onclick="comprobar(value)"></td>
+          <td colspan="2"><input type="button" value="=" onclick="calcular()"></td>
+        </tr>
+      </table>
+    </form>
+  </body>
+  </html>
